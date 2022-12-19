@@ -7,3 +7,4 @@ Required:
 NetCDF4
 numpy
 https://github.com/MJHarrison-GFDL/MIDAS/
+NCO-tools (command line)
