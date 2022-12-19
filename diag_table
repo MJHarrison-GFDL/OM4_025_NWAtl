@@ -1,0 +1,103 @@
+NWAtl
+1962 1 1 0 0 0
+"ocean_daily",            24, "hours",   1, "days", "time"
+"ocean_static",     -1,  "months", 1, "days", "time"
+"ocean_month",            1, "months",   1, "days", "time"
+"ocean_hifreq",            60, "seconds",   1, "days", "time"
+
+
+"ocean_model", "areacello",   "areacello",   "ocean_static", "all", "none", "none", 2
+ "ocean_model", "deptho",      "deptho",      "ocean_static", "all", "none", "none", 2
+ "ocean_model", "sftof",       "sftof",       "ocean_static", "all", "none", "none", 2
+ "ocean_model", "wet",       "wet",       "ocean_static", "all", "none", "none", 2
+ "ocean_model", "rhozero",       "rhozero",       "ocean_static", "all", "none", "none", 2
+ "ocean_model", "cpocean",       "cpocean",       "ocean_static", "all", "none", "none", 2
+ "ocean_model", "SSH",          "ssh",              "ocean_daily", "all", "mean", "none",2
+ "ocean_model", "SSU",          "ssu",              "ocean_daily", "all", "mean", "none",2
+ "ocean_model", "SSV",          "ssv",              "ocean_daily", "all", "mean", "none",2
+ "ocean_model", "SST",          "sst",              "ocean_daily", "all", "mean", "none",2
+ "ocean_model", "SSS",          "sss",              "ocean_daily", "all", "mean", "none",2
+ "ocean_model", "lprec",          "lprec",              "ocean_daily", "all", "mean", "none",2
+ "ocean_model", "fprec",          "fprec",              "ocean_daily", "all", "mean", "none",2
+ "ocean_model", "evap",          "evap",              "ocean_daily", "all", "mean", "none",2
+ "ocean_model", "taux",          "taux",              "ocean_daily", "all", "mean", "none",2
+ "ocean_model", "tauy",          "tauy",              "ocean_daily", "all", "mean", "none",2
+ "ocean_model", "ustar",          "ustar",              "ocean_daily", "all", "mean", "none",2
+ "ocean_model", "PRCmE",          "PRCmE",              "ocean_daily", "all", "mean", "none",2
+ "ocean_model", "SW",          "SW",              "ocean_daily", "all", "mean", "none",2
+ "ocean_model", "pbo",          "pbo",              "ocean_daily", "all", "mean", "none",1
+ "ocean_model", "salt_flux",          "salt_flux",              "ocean_daily", "all", "mean", "none",2
+"ocean_model_z", "uav",          "u",              "ocean_month", "all", "mean", "none",2
+"ocean_model_z", "vav",          "v",              "ocean_month", "all", "mean", "none",2
+"ocean_model_z", "vh",          "vh",              "ocean_month", "all", "mean", "none",2
+#"ocean_model_z", "Rayleigh_u",          "Rayleigh_u",              "ocean_month", "all", "mean", "none",2
+#"ocean_model_z", "Rayleigh_v",          "Rayleigh_v",              "ocean_month", "all", "mean", "none",2
+"ocean_model_z", "temp",          "temp",              "ocean_month", "all", "mean", "none",2
+"ocean_model_z", "salt",          "salt",              "ocean_month", "all", "mean", "none",2
+#"ocean_model_z", "dye001",          "dye001",              "ocean_month", "all", "mean", "none",2
+"ocean_model", "SSH",                 "ssh",              "ocean_month", "all", "mean", "none",2
+"ocean_model", "taux",          "taux",              "ocean_month", "all", "mean", "none",2
+"ocean_model", "tauy",          "tauy",              "ocean_month", "all", "mean", "none",2
+"ocean_model", "PRCmE",          "PRCmE",              "ocean_month", "all", "mean", "none",2
+"ocean_model", "net_heat_coupler",          "hflx",              "ocean_month", "all", "mean", "none",2
+"ocean_model", "MLD_003",          "MLD_003",              "ocean_month", "all", "mean", "none",2
+"ocean_model", "pbo",          "pbo",              "ocean_month", "all", "mean", "none",2
+#"ocean_model", "vh_rho",          "vh_rho",              "ocean_month", "all", "mean", "none",2
+#"ocean_model", "masscello",          "masscello",              "ocean_month", "all", "mean", "none",2
+#"ocean_model", "masscello_xyave",          "masscello_xyave",              "ocean_month", "all", "mean", "none",2
+
+"ocean_annual",            12, "months",   1, "days", "time"
+"ocean_model", "Ahh",          "Ahh",              "ocean_annual", "all", "mean", "none",2
+"ocean_model", "Khh",          "Khh",              "ocean_annual", "all", "mean", "none",2
+"ocean_model", "T_ady_2d",          "T_ady_2d",              "ocean_annual", "all", "mean", "none",2
+"ocean_model", "PRCmE",          "PRCmE",              "ocean_annual", "all", "mean", "none",2
+"ocean_model", "taux",          "taux",              "ocean_annual", "all", "mean", "none",2
+"ocean_model", "tauy",          "tauy",              "ocean_annual", "all", "mean", "none",2
+"ocean_model", "net_heat_coupler",          "hflx",              "ocean_annual", "all", "mean", "none",2
+
+
+"ocean_month_snap",            1, "months",   1, "days", "time"
+"ocean_model", "Ahh",          "Ahh",              "ocean_month_snap", "all", "none", "none",2
+"ocean_model", "Khh",          "Khh",              "ocean_month_snap", "all", "none", "none",2
+"ocean_model", "Kd_interface",          "Kd_interface",              "ocean_month_snap", "all", "none", "none",2
+"ocean_model", "Kd_shear",          "Kd_shear",              "ocean_month_snap", "all", "none", "none",2
+"ocean_model", "e",          "e",              "ocean_month_snap", "all", "none", "none",2
+"ocean_model", "temp",          "temp",              "ocean_month_snap", "all", "none", "none",2
+"ocean_model", "salt",          "salt",              "ocean_month_snap", "all", "none", "none",2
+"ocean_model", "age",          "age",              "ocean_month_snap", "all", "none", "none",2
+"ocean_model", "uav",          "uav",              "ocean_month_snap", "all", "none", "none",2
+"ocean_model", "vav",          "vav",              "ocean_month_snap", "all", "none", "none",2
+"ocean_model", "Kv_u",          "Kv_u",              "ocean_month_snap", "all", "none", "none",2
+"ocean_model", "Kv_v",          "Kv_v",              "ocean_month_snap", "all", "none", "none",2
+
+"ocean_model", "eta_hifreq",          "eta_hifreq",              "ocean_hifreq", "all", "none", "none",2
+
+
+"ice_daily",              24, "hours",   1, "days", "time"
+ "ice_model", "EVAP",       "EVAP",         "ice_daily", "all", "mean", "none", 2
+ "ice_model", "SNOWFL",       "SNOWFL",         "ice_daily", "all", "mean", "none", 2
+ "ice_model", "RAIN",       "RAIN",         "ice_daily", "all", "mean", "none", 2
+ "ice_model", "MIB",       "MIB",         "ice_daily", "all", "mean", "none", 2
+ "ice_model", "RUNOFF",       "RUNOFF",         "ice_daily", "all", "mean", "none", 2
+ "ice_model", "CALVING",       "CALVING",         "ice_daily", "all", "mean", "none", 2
+# "ice_model", "FW_NUDGE",       "FW_NUDGE",         "ice_daily", "all", "mean", "none", 2
+ "ice_model", "CN",       "CN",         "ice_daily", "all", "mean", "none", 2
+# "ice_model", "EXT",        "EXT",          "ice_daily", "all", "mean", "none", 2
+# "ice_model", "EXT",        "EXT_MIN",      "ice_daily", "all", "min",  "none", 2
+# "ice_model", "EXT",        "EXT_MAX",      "ice_daily", "all", "max",  "none", 2
+# "ice_model", "FA_X",       "FA_X",         "ice_daily", "all", "mean", "none", 2
+# "ice_model", "FA_Y",       "FA_Y",         "ice_daily", "all", "mean", "none", 2
+#"ice_model", "FC_X",       "FC_X",         "ice_daily", "all", "mean", "none", 2
+#"ice_model", "FC_Y",       "FC_Y",         "ice_daily", "all", "mean", "none", 2
+# "ice_model", "FI_X",       "FI_X",         "ice_daily", "all", "mean", "none", 2
+# "ice_model", "FI_Y",       "FI_Y",         "ice_daily", "all", "mean", "none", 2
+#"ice_model", "FW_X",       "FW_X",         "ice_daily", "all", "mean", "none", 2
+#"ice_model", "FW_Y",       "FW_Y",         "ice_daily", "all", "mean", "none", 2
+ "ice_model", "FRAZIL",     "FRAZIL",       "ice_daily", "all", "mean", "none", 2
+ "ice_model", "HI",         "HI",           "ice_daily", "all", "mean", "none", 2
+ "ice_model", "SW",         "SW",           "ice_daily", "all", "mean", "none", 2
+  "ice_model", "RDG_RATE",         "RDG_RATE",           "ice_daily", "all", "mean", "none", 2
+#"ice_model", "HI_PART",    "HI_PART",      "ice_daily", "all", "mean", "none", 2
+# "ice_model", "HS",         "HS",           "ice_daily", "all", "mean", "none", 2
+# "ice_model", "IX_TRANS",   "IX_TRANS",     "ice_daily", "all", "mean", "none", 2
+# "ice_model", "IY_TRANS",   "IY_TRANS",     "ice_daily", "all", "mean", "none", 2

@@ -1,0 +1,150 @@
+ &MOM_input_nml
+         output_directory = './',
+         input_filename = 'r'
+         restart_input_dir = 'INPUT/',
+         restart_output_dir = 'RESTART/',
+         parameter_filename = 'MOM_input','MOM_layout','MOM_override'
+/
+
+ &SIS_input_nml
+         output_directory = './',
+         input_filename = 'r'
+         restart_input_dir = 'INPUT/',
+         restart_output_dir = 'RESTART/',
+         parameter_filename = 'SIS_input','SIS_layout','SIS_override'
+/
+
+ &coupler_nml
+            months = 0,
+            days   = 30,
+            current_date = 1992,1,2,0,0,0,
+            calendar = 'JULIAN',
+            dt_cpld = 1200,
+            dt_atmos = 1200,
+            do_atmos = .true.,
+            do_land = .false.,
+            do_ice = .true.,
+            do_ocean = .true.,
+            do_flux = .true.,
+            atmos_npes = 0,
+            ocean_npes = 72,
+            concurrent = .false.,
+            use_lag_fluxes=.false.,
+            check_stocks = 0
+
+/
+
+ &ocean_solo_nml
+           calendar='NOLEAP',
+           date_init = 1992,1,1,0,0,0,
+           days=0,
+           months=3
+/
+
+ &atmos_model_nml
+           layout = 0, 0
+/
+
+
+ &diag_manager_nml
+            max_axes = 100,
+            max_num_axis_sets = 100,
+            max_input_fields = 699
+            max_output_fields = 699
+	    flush_nc_files=.true.
+            mix_snapshot_average_fields=.false.
+/
+
+ &dummy_ice_model_nml
+       ice_layout = 0,0
+       ice_io_layout = 1,1
+       ice_mask_table='MOM_mask_table'
+/
+
+ &dummy_ocean_model_nml
+       ocean_layout = 0,0
+       ocean_io_layout = 1,1
+       ocean_mask_table='MOM_mask_table'
+/
+
+ &flux_exchange_nml
+            debug_stocks = .FALSE.
+            divert_stocks_report = .TRUE.
+            do_area_weighted_flux = .FALSE.
+	    partition_fprec_from_lprec = .true.
+/
+
+ &fms_io_nml
+            fms_netcdf_restart=.true.
+            threading_read='multi'
+            max_files_r = 200
+            max_files_w = 200
+/
+
+ &fms_nml
+            clock_grain='ROUTINE'
+            clock_flags='NONE'
+            domains_stack_size = 5000000
+            stack_size =0
+/
+
+
+ &ice_albedo_nml
+            t_range = 10.
+/
+
+ &ice_model_nml
+
+/
+
+
+ &monin_obukhov_nml
+          neutral = .false.,
+          stable_option =  2,
+          rich_crit = 10.0,
+          zeta_trans =  0.5,
+          drag_min_heat = 1.e-5, drag_min_moist = 1.e-5, drag_min_mom = 1.e-5
+/
+
+ &ocean_albedo_nml
+            ocean_albedo_option = 2
+/
+
+ &ocean_rough_nml
+            rough_scheme = 'beljaars'
+            roughness_min = 1.e-4
+/
+
+
+ &sat_vapor_pres_nml
+            construct_table_wrt_liq = .true.
+            construct_table_wrt_liq_and_ice = .true.
+	    use_exact_qs = .TRUE.
+/
+
+
+ &surface_flux_nml
+	   gust_min = 1.e-10
+/
+
+ &topo_rough_nml
+         use_topo_rough    = .true.
+         max_topo_rough    = 100.0
+         topo_rough_factor = 0.01
+         topo_rough_source = 'input',
+         topo_rough_file = 'INPUT/topo_rough_land.nc',
+/
+
+ &topography_nml
+       topog_file = 'INPUT/navy_topography.data.nc'
+/
+
+
+ &xgrid_nml
+            make_exchange_reproduce = .false.
+            interp_method = 'second_order'
+/
+
+ &time_interp_external_nml
+        num_io_buffers=24
+/
